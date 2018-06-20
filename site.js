@@ -6,26 +6,26 @@ var circleTwo = anime.timeline({
 });
 
 var triangleStop = (window.innerHeight / 2) - 95;
-
+var globalSpeed = 1000;
 
 circleOne
 	.add({
 		targets: '.circle-one',
 		translateY: triangleStop,
-		duration: 500,
+		duration: globalSpeed,
 		easing: 'linear'
 	})
 	.add({
 		targets: '.circle-one',
 		translateY: triangleStop + 300,
-		duration: 500,
+		duration: globalSpeed,
 		translateX: 175,
 		easing: 'linear'
 	})
 	.add({
 		targets: '.circle-one',
 		translateY: (triangleStop * 2) + 300,
-		duration: 500,
+		duration: globalSpeed,
 		translateX: 175,
 		easing: 'linear'
 	});
@@ -35,21 +35,21 @@ window.setTimeout(function(){
 		.add({
 			targets: '.circle-two',
 			translateY: triangleStop,
-			duration: 500,
+			duration: globalSpeed,
 			easing: 'linear'
 		})
 		.add({
 			targets: '.circle-two',
 			translateY: triangleStop + 300,
-			duration: 500,
+			duration: globalSpeed,
 			translateX: -175,
 			easing: 'linear'
 		})
 		.add({
 			targets: '.circle-two',
 			translateY: (triangleStop * 2) + 300,
-			duration: 500,
+			duration: globalSpeed,
 			translateX: -175,
 			easing: 'linear'
 		});
-	}, 1000);
+	}, (globalSpeed * 2));
