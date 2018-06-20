@@ -16,6 +16,10 @@ window.addEventListener('resize', function(){
 	Attempting to reset anime 
 	on window resize so it can 
 	register a new triangleStop value
+
+	This actual fix when I apply this IRL 
+	is to have start value based on absolute position
+	relative to the triangle itself, rather than viewport.
 	*/
 	circleOne.restart();
 	circleTwo.restart();
