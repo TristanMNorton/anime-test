@@ -27,15 +27,16 @@ window.addEventListener('resize', function(){
 
 var ave = anime({
 	targets: '.ave',
-	duration: 5000,
-	translateY: -775,
-	easing: 'linear'
+	duration: 90000,
+	translateY: -650,
+	rotate: '.05turn'
 })
 
 var blown = anime({
 	targets: '.blown',
 	duration: 90000,
 	width: 1000,
+	rotate: '25turn',
 	easing: 'linear'
 })
 
