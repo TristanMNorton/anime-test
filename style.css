@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container img {
+	width: 400px;
+}
+
+.container .circle {
+	position: absolute;
+	width: 100px;
+}
+
+.container .circle-one {
+	left: 50%;
+	top: -100px;
+}
+.container .circle-two {
+	right: 50%;
+	top: -100px;
+}
+
