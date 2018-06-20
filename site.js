@@ -6,7 +6,20 @@ var circleTwo = anime.timeline({
 });
 
 var triangleStop = (window.innerHeight / 2) - 95;
-var globalSpeed = 1000;
+var globalSpeed = 500;
+
+window.addEventListener('resize', function(){
+	var triangleStop = (window.innerHeight / 2) - 95;
+
+	/* 
+	THIS DOESN'T WORK :D. 
+	Attempting to reset anime 
+	on window resize so it can 
+	register a new triangleStop value
+	*/
+	circleOne.restart();
+	circleTwo.restart();
+});
 
 circleOne
 	.add({
