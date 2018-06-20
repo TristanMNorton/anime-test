@@ -25,6 +25,20 @@ window.addEventListener('resize', function(){
 	circleTwo.restart();
 });
 
+var ave = anime({
+	targets: '.ave',
+	duration: 5000,
+	translateY: -775,
+	easing: 'linear'
+})
+
+var blown = anime({
+	targets: '.blown',
+	duration: 90000,
+	width: 1000,
+	easing: 'linear'
+})
+
 circleOne
 	.add({
 		targets: '.circle-one',

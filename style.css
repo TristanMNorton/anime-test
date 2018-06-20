@@ -37,3 +37,20 @@ a {
 	top: -100px;
 }
 
+.container .ave {
+	position: absolute;
+	bottom: -1000;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.container .blown {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 1px;
+}
