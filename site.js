@@ -9,7 +9,7 @@ var triangleStop = (window.innerHeight / 2) - 95;
 var globalSpeed = 500;
 
 window.addEventListener('resize', function(){
-	var triangleStop = (window.innerHeight / 2) - 95;
+	triangleStop = (window.innerHeight / 2) - 95;
 
 	/* 
 	THIS DOESN'T WORK :D. 
